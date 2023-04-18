@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/basic.dart';
 
 void main() {
   runApp(const MyApp());
@@ -68,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       top: 16,
                     ),
                     child: Container(
-                      child: Text(
+                      child: const Text(
                         "Anthony Edward Stark",
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
@@ -109,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     height: 50,
                     width: 48,
-                    child: Icon(
+                    child: const Icon(
                       Icons.info,
                       size: 50,
                     ),
@@ -120,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     height: 25,
                     width: 200,
-                    child: Text(
+                    child: const Text(
                       'Personal Data',
                       style: TextStyle(
                         fontSize: 20,
@@ -133,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 margin: const EdgeInsets.only(right: 16),
                 height: 50,
                 width: 48,
-                child: Icon(
+                child: const Icon(
                   Icons.keyboard_arrow_right_sharp,
                 ),
               ),
@@ -149,7 +148,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     height: 50,
                     width: 48,
-                    child: Icon(
+                    child: const Icon(
                       Icons.phone,
                       size: 50,
                     ),
@@ -160,7 +159,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     height: 25,
                     width: 200,
-                    child: Text(
+                    child: const Text(
                       'Contacts',
                       style: TextStyle(
                         fontSize: 20,
@@ -173,7 +172,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 margin: const EdgeInsets.only(right: 16),
                 height: 50,
                 width: 48,
-                child: Icon(
+                child: const Icon(
                   Icons.keyboard_arrow_right_sharp,
                 ),
               ),
@@ -189,7 +188,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     height: 50,
                     width: 48,
-                    child: Icon(
+                    child: const Icon(
                       Icons.badge,
                       size: 50,
                     ),
@@ -200,7 +199,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     height: 25,
                     width: 200,
-                    child: Text(
+                    child: const Text(
                       'Experience',
                       style: TextStyle(
                         fontSize: 20,
@@ -213,7 +212,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 margin: const EdgeInsets.only(right: 16),
                 height: 50,
                 width: 48,
-                child: Icon(
+                child: const Icon(
                   Icons.keyboard_arrow_right_sharp,
                 ),
               ),
@@ -230,7 +229,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     height: 50,
                     width: 48,
-                    child: Icon(
+                    child: const Icon(
                       Icons.settings,
                       size: 50,
                     ),
@@ -241,7 +240,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     height: 25,
                     width: 200,
-                    child: Text(
+                    child: const Text(
                       'Settings',
                       style: TextStyle(
                         fontSize: 20,
@@ -254,7 +253,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 margin: const EdgeInsets.only(right: 16),
                 height: 50,
                 width: 48,
-                child: Icon(
+                child: const Icon(
                   Icons.keyboard_arrow_right_sharp,
                 ),
               ),
@@ -277,7 +276,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     height: 50,
                     width: 48,
-                    child: Icon(
+                    child: const Icon(
                       Icons.info,
                       size: 50,
                     ),
@@ -288,7 +287,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     height: 25,
                     width: 200,
-                    child: Text(
+                    child: const Text(
                       'FAQs',
                       style: TextStyle(
                         fontSize: 20,
@@ -309,7 +308,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     height: 50,
                     width: 48,
-                    child: Icon(
+                    child: const Icon(
                       Icons.forum,
                       size: 50,
                     ),
@@ -320,7 +319,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     height: 25,
                     width: 200,
-                    child: Text(
+                    child: const Text(
                       'Questions',
                       style: TextStyle(
                         fontSize: 20,
@@ -352,7 +351,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     height: 25,
                     width: 200,
-                    child: Text(
+                    child: const Text(
                       'Community',
                       style: TextStyle(
                         fontSize: 20,
