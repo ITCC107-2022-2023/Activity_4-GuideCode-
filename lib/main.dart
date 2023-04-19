@@ -46,17 +46,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   left: 16,
                   top: 16,
                 ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(12),
-                  child: Container(
-                    height: 64,
-                    width: 64,
-                    child: Image.network(
-                      "https://upload.wikimedia.org/wikipedia/en/f/f2/Robert_Downey_Jr._as_Tony_Stark_in_Avengers_Infinity_War.jpg",
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
+                color: Colors.blue,
+                height: 64,
+                width: 64,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -66,302 +58,87 @@ class _MyHomePageState extends State<MyHomePage> {
                       left: 16,
                       top: 16,
                     ),
-                    child: Container(
-                      child: const Text(
-                        "Anthony Edward Stark",
-                        style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.bold),
-                      ),
-                    ),
+                    color: Colors.grey,
+                    height: 16,
+                    width: 200,
                   ),
                   Container(
                     margin: const EdgeInsets.only(
                       left: 16,
-                      top: 3,
+                      top: 8,
                     ),
-                    child: Text(
-                      'Genius, Billionaire',
-                      style: TextStyle(
-                        fontSize: 13,
-                      ),
-                    ),
-                    height: 15,
+                    color: Colors.grey,
+                    height: 12,
                     width: 170,
                   ),
                 ],
               ),
             ],
           ),
-//...........2nd divider
           const SizedBox(height: 16),
-          const Divider(
-            height: 1.15,
-            thickness: 5,
-          ),
-          const SizedBox(height: 16),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
-                children: [
-                  const SizedBox(width: 16),
-                  Container(
-                    height: 50,
-                    width: 48,
-                    child: const Icon(
-                      Icons.info,
-                      size: 50,
+          const Divider(height: 2.15),
+          for (var i = 0; i < 4; i++) ...[
+            const SizedBox(height: 16),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    const SizedBox(width: 16),
+                    Container(
+                      height: 48,
+                      width: 48,
+                      color: Colors.blue,
                     ),
-                  ),
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  Container(
-                    height: 25,
-                    width: 200,
-                    child: const Text(
-                      'Personal Data',
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
+                    const SizedBox(width: 16),
+                    Container(
+                      height: 12,
+                      width: 120,
+                      color: Colors.grey,
                     ),
-                  ),
-                ],
-              ),
-              Container(
-                margin: const EdgeInsets.only(right: 16),
-                height: 50,
-                width: 48,
-                child: const Icon(
-                  Icons.keyboard_arrow_right_sharp,
+                  ],
                 ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 16),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
-                children: [
-                  const SizedBox(width: 16),
-                  Container(
-                    height: 50,
-                    width: 48,
-                    child: const Icon(
-                      Icons.phone,
-                      size: 50,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  Container(
-                    height: 25,
-                    width: 200,
-                    child: const Text(
-                      'Contacts',
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              Container(
-                margin: const EdgeInsets.only(right: 16),
-                height: 50,
-                width: 48,
-                child: const Icon(
-                  Icons.keyboard_arrow_right_sharp,
+                Container(
+                  margin: const EdgeInsets.only(right: 16),
+                  height: 12,
+                  width: 12,
+                  color: Colors.black,
                 ),
-              ),
-            ],
-          ),
+              ],
+            ),
+          ],
           const SizedBox(height: 16),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
-                children: [
-                  const SizedBox(width: 16),
-                  Container(
-                    height: 50,
-                    width: 48,
-                    child: const Icon(
-                      Icons.badge,
-                      size: 50,
+          const Divider(height: 1.15),
+          for (var i = 0; i < 3; i++) ...[
+            const SizedBox(height: 16),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    const SizedBox(width: 16),
+                    Container(
+                      height: 48,
+                      width: 48,
+                      color: Colors.blue,
                     ),
-                  ),
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  Container(
-                    height: 25,
-                    width: 200,
-                    child: const Text(
-                      'Experience',
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
+                    const SizedBox(width: 16),
+                    Container(
+                      height: 12,
+                      width: 120,
+                      color: Colors.grey,
                     ),
-                  ),
-                ],
-              ),
-              Container(
-                margin: const EdgeInsets.only(right: 16),
-                height: 50,
-                width: 48,
-                child: const Icon(
-                  Icons.keyboard_arrow_right_sharp,
+                  ],
                 ),
-              ),
-            ],
-          ),
-
-          const SizedBox(height: 16),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
-                children: [
-                  const SizedBox(width: 16),
-                  Container(
-                    height: 50,
-                    width: 48,
-                    child: const Icon(
-                      Icons.settings,
-                      size: 50,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  Container(
-                    height: 25,
-                    width: 200,
-                    child: const Text(
-                      'Settings',
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              Container(
-                margin: const EdgeInsets.only(right: 16),
-                height: 50,
-                width: 48,
-                child: const Icon(
-                  Icons.keyboard_arrow_right_sharp,
+                Container(
+                  margin: const EdgeInsets.only(right: 16),
+                  height: 12,
+                  width: 12,
+                  color: Colors.black,
                 ),
-              ),
-            ],
-          ),
-
-//.............last divider
-          const SizedBox(height: 16),
-          const Divider(
-            height: 10,
-            thickness: 5,
-          ),
-          const SizedBox(height: 16),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
-                children: [
-                  const SizedBox(width: 16),
-                  Container(
-                    height: 50,
-                    width: 48,
-                    child: const Icon(
-                      Icons.info,
-                      size: 50,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  Container(
-                    height: 25,
-                    width: 200,
-                    child: const Text(
-                      'FAQs',
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-          const SizedBox(height: 16),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
-                children: [
-                  const SizedBox(width: 16),
-                  Container(
-                    height: 50,
-                    width: 48,
-                    child: const Icon(
-                      Icons.forum,
-                      size: 50,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  Container(
-                    height: 25,
-                    width: 200,
-                    child: const Text(
-                      'Questions',
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-          const SizedBox(height: 16),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
-                children: [
-                  const SizedBox(width: 16),
-                  Container(
-                    height: 50,
-                    width: 48,
-                    child: const Icon(
-                      Icons.groups,
-                      size: 50,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  Container(
-                    height: 25,
-                    width: 200,
-                    child: const Text(
-                      'Community',
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
+              ],
+            ),
+          ],
         ],
       ),
     );
